@@ -73,6 +73,10 @@
     <IncludePath>C:\Users\LinkC\Documents\Visual Studio 2017\Projects\PixelWorldEngine\PixelWorldEngine;$(SolutionDir)ThirdParty\freetype\include;$(SolutionDir)ThirdParty;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)ThirdParty\freetype\win32;$(SolutionDir)ThirdParty\SDL2\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>C:\Users\LinkC\Documents\Visual Studio 2017\Projects\PixelWorldEngine\PixelWorldEngine;$(SolutionDir)ThirdParty\freetype\include;$(SolutionDir)ThirdParty;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)ThirdParty\freetype\win32;$(SolutionDir)ThirdParty\SDL2\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -118,6 +122,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -127,6 +132,9 @@
     <ProjectReference Include="..\..\PixelWorldEngine\PixelWorldEngine\PixelWorldEngine.vcxproj">
       <Project>{12ccc5c9-d3ff-4315-a2c1-bb8c7aa0aeee}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameObject.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,6 +1,6 @@
 # PixelWorldEngineSample
 
-PixelWorldEngine的样例。
+PixelWorldEngine的样例，支持引擎的版本为0.97。
 
 ## 使用注意
 
@@ -32,3 +32,4 @@ git clone https://github.com/LinkClinton/PixelWorldEngineSample.git
 - [SDL2](http://www.libsdl.org)
 - [FreeType](https://www.freetype.org)
 - [glm](https://glm.g-truc.net)
+
